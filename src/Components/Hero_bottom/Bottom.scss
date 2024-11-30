@@ -1,0 +1,27 @@
+.bottom {
+  padding: 60px;
+  background: #222222;
+  .bottom_flex {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    .bottom_cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    h1 {
+      font-size: 20px;
+      font-family: "Montserrat";
+    }
+    p {
+      font-size: 16px;
+      font-family: sans-serif;
+      color: #e0e0e0;
+    }
+  }
+}
