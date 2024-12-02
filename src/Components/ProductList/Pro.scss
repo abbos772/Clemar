@@ -1,0 +1,208 @@
+.Mach {
+  display: flex;
+  flex-direction: column;
+  .Mach_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    .mach_mini {
+      line-height: 2.1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      justify-content: space-between;
+      h3 {
+        font-size: 17px;
+        color: #222222;
+        font-family: "Montserrat";
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      h3:hover {
+        color: #017ba6;
+      }
+      p {
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #333333;
+        font-weight: 700;
+      }
+      button {
+        width: 117px;
+        height: 45px;
+        border: 0;
+        background: #019edc;
+        cursor: pointer;
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+      }
+    }
+  }
+  .Mach_text {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    font-family: "Montserrat";
+    h1 {
+      font-size: 36px;
+      color: #222222;
+    }
+    button {
+      font-size: 14px;
+      font-family: sans-serif;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      color: #017ba6;
+      font-weight: 700;
+      transition: 0.7s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 157px;
+      height: 41px;
+    }
+    button:hover {
+      width: 157px;
+      height: 41px;
+      background-color: #017ba6;
+      color: white;
+    }
+  }
+  .Mach_carts {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    .Mach_cart {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        max-width: 320px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media (max-width: 670px) {
+  .Mach {
+    display: flex;
+    flex-direction: column;
+    .Mach_flex {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      width: 100%;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      .mach_mini {
+        line-height: 2.1;
+
+        h3 {
+          font-size: 17px;
+          color: #222222;
+          font-family: "Montserrat";
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        h3:hover {
+          color: #017ba6;
+        }
+        p {
+          font-size: 12px;
+          font-family: sans-serif;
+          color: #333333;
+          font-weight: 700;
+        }
+        button {
+          width: 110px;
+          height: 40px;
+          border: 0;
+          background: #019edc;
+          cursor: pointer;
+          color: white;
+          font-size: 15px;
+          font-family: sans-serif;
+        }
+      }
+    }
+    .Mach_text {
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      align-items: center;
+      font-family: "Montserrat";
+      h1 {
+        font-size: 30px;
+        color: #222222;
+      }
+      button {
+        font-size: 12px;
+        font-family: sans-serif;
+        border: 0;
+        background: 0;
+        cursor: pointer;
+        color: #017ba6;
+        font-weight: 700;
+        transition: 0.7s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 120px !important;
+        height: 30px !important;
+      }
+      button:hover {
+        width: 120px;
+        height: 30px;
+        background-color: #017ba6;
+        color: white;
+      }
+    }
+    .Mach_carts {
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      .Mach_cart {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

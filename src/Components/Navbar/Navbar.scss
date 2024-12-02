@@ -2,6 +2,9 @@
   height: 80px;
   background-color: rgb(255, 255, 255);
   padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   .Nav {
     display: flex;
     justify-content: space-between;

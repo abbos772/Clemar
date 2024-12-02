@@ -4,13 +4,16 @@ import Log from "./Img/Log.png";
 import { IoMenuOutline, IoSearch } from "react-icons/io5";
 import { CgShoppingBag } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="Navbar">
       <div className="Nav container">
         <div className="Logo">
-          <img src={Log} alt="Logo" width={140} />
+          <Link to={"/"}>
+            <img src={Log} alt="Logo" width={140} />
+          </Link>
           <select name="catalog" id="catalog">
             <option value="catalog">КАТАЛОГ</option>
           </select>
