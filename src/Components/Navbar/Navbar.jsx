@@ -5,6 +5,7 @@ import { IoMenuOutline, IoSearch } from "react-icons/io5";
 import { CgShoppingBag } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { BiLogIn } from "react-icons/bi";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -31,6 +32,9 @@ const Navbar = () => {
             <h3 id="not">Services</h3>
             <IoSearch id="Search" />
             <CgShoppingBag id="Shopping" />
+            <Link to={'/Login'}>
+            <BiLogIn/>
+            </Link>
             <p id="Shopping">
               Режим работы: <br />
               Пн-Пт с 9:00 до 18:00
@@ -47,9 +51,7 @@ const Navbar = () => {
         </div>
         <div className="shopBag">
           <CgShoppingBag />
-          <button className="menu" onClick={() => setToggle(!toggle)}>
-            <IoMenuOutline fontSize={30} />
-          </button>
+        
         </div>
       </div>
     </div>
