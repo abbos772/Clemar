@@ -66,6 +66,46 @@
     }
   }
 }
+.related_products {
+  .mach_mini{
+    margin-left: 20px;
+    button{
+      padding: 10px;
+      font-family: sans-serif;
+      cursor: pointer;
+      margin-top: 5px;
+     background: #019EDC;
+      border: 0;
+     color: white;
+    }
+  }
+  margin-top: 100px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .Mach_carts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Mach_flex {
+   padding-top: 20px;
+  }
+  .Mach_cart{
+    img{
+      width: 100%;
+      max-width: 400px;
+      height: auto !important;
+    }
+  }
+}
+
+
 @media (max-width: 900px) {
   .single_nav {
     padding-top: 50px;

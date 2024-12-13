@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { products } from "../Products/Data";
+
 import "./Product_Machins.scss";
 import { GoArrowRight } from "react-icons/go";
 
 const Product_Machins = () => {
   return (
     <div className="container">
+
       <div className="Mach" style={{ paddingTop: "50px" }}>
         <div className="Mach_text">
           <h1>Поломоечные машины</h1>
-          <Link to="/products">
-            <button>
-              Смотреть все <GoArrowRight fontSize={16} />
-            </button>
-          </Link>
+          <Link to="/kate" state={products}>
+  <button>
+    Смотреть все <GoArrowRight fontSize={16} />
+  </button>
+</Link>
+          
         </div>
         <div className="Mach_carts">
           {products.map((product) => (

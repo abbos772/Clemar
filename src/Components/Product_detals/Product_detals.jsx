@@ -1,9 +1,14 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import { products } from "../Products/Data"; // Boshqa mahsulotlar ro'yxati
 import "./Product_detals.scss";
+
 const Product_detals = () => {
   const location = useLocation();
   const product = location.state;
+
+  // Boshqa mahsulotlarni filtrlash (tanlangan mahsulotdan boshqalar)
+  const otherProducts = products.filter((item) => item.id !== product?.id);
 
   return (
     <div className="container">
@@ -41,6 +46,27 @@ const Product_detals = () => {
                 <p>Макс. производительность: {product.uch}</p>
                 <p>Давление щётки: {product.tort}</p>
               </div>
+            </div>
+          </div>
+
+       
+          <div className="related_products">
+            <h2>Другие товары</h2>
+            <div className="Mach_carts">
+              {otherProducts.map((item) => (
+                <div className="Mach_flex" key={item.id}>
+                  <div className="Mach_cart">
+                    <img src={item.image} alt={item.name} />
+                  </div>
+                  <div className="mach_mini">
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                    <Link to={`/product/${item.id}`} state={item}>
+                      <button>Подробнее</button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

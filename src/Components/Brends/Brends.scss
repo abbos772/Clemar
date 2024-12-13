@@ -1,0 +1,26 @@
+.Brends_box{
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .Brend_box{
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 318px;
+        height: 176px;
+        border: 1px solid rgb(226, 226, 226);
+      img{
+        width: 100%;
+        max-width: 300px;
+        height: 120px;
+        object-fit: contain;
+      }
+    }
+}

@@ -32,9 +32,9 @@ const Navbar = () => {
             <h3 id="not">Services</h3>
             <IoSearch id="Search" />
             <CgShoppingBag id="Shopping" />
-            <Link to={'/Login'}>
+            {/* <Link to={'/Login'}>
             <BiLogIn/>
-            </Link>
+            </Link> */}
             <p id="Shopping">
               Режим работы: <br />
               Пн-Пт с 9:00 до 18:00

@@ -6,15 +6,13 @@ import ikki from "./imgs/2.png";
 import uch from "./imgs/3.png";
 import tort from "./imgs/4.png";
 import besh from "./imgs/5.png";
+import { Link } from "react-router-dom";
 const Kate = () => {
   return (
     <div className="container">
       <div className="Kate">
         <div className="Kate_text">
-          <h1>Категории​</h1>
-          <button>
-            Смотреть все <GoArrowRight fontSize={16} />
-          </button>
+          <h1>Продукты</h1>   
         </div>
         <div className="kate_carts">
           <div className="kate_flex">

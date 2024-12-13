@@ -5,6 +5,7 @@ import Hero_bottom from "../Hero_bottom/Bottom";
 import Kate from "../Kategoriya/Kate";
 import Product_Machins from "../Product_Machins/Product_Machins";
 import Pro_bumaga from "../Product_bumaga/Pro_bumaga";
+import Brends from "../Brends/Brends";
 const Home = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const Home = () => {
       <Kate />
       <Product_Machins />
       <Pro_bumaga />
+      <Brends/>
     </div>
   );
 };

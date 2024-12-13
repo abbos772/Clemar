@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="foot">
+       <a href="#Foot">
+       <div className="foot">
           <div className="foot_logo">
             <img src={logo} alt="" />
             <p>Clemar – Представляем лучшие мировые бренды в Узбекистане</p>
@@ -29,6 +30,7 @@ const Footer = () => {
             </h3>
           </div>
         </div>
+       </a>
       </div>
     </div>
   );
